@@ -1,31 +1,657 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29709.97
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gelogic Proccesses", "Gelogic Proccesses.vcxproj", "{A0F69293-392C-41D1-B720-C2D66A03B46E}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A0F69293-392C-41D1-B720-C2D66A03B46E}.Debug|x64.ActiveCfg = Debug|x64
-		{A0F69293-392C-41D1-B720-C2D66A03B46E}.Debug|x64.Build.0 = Debug|x64
-		{A0F69293-392C-41D1-B720-C2D66A03B46E}.Debug|x86.ActiveCfg = Debug|Win32
-		{A0F69293-392C-41D1-B720-C2D66A03B46E}.Debug|x86.Build.0 = Debug|Win32
-		{A0F69293-392C-41D1-B720-C2D66A03B46E}.Release|x64.ActiveCfg = Release|x64
-		{A0F69293-392C-41D1-B720-C2D66A03B46E}.Release|x64.Build.0 = Release|x64
-		{A0F69293-392C-41D1-B720-C2D66A03B46E}.Release|x86.ActiveCfg = Release|Win32
-		{A0F69293-392C-41D1-B720-C2D66A03B46E}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {041692FD-5AA8-4E79-8594-B21C6F223145}
-	EndGlobalSection
-EndGlobal
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	cout << "\n";
+	cout << "\n";
+	cout << "Hello Class, We've reviewed many different types of rock. \n";
+
+	cout << "\n";
+	cout << "\n";
+	cout << "What rock type would you like to review?\n";
+	string input;
+	cin >> input;
+	cout << "\n";
+	if (input == "sedimentary")
+	{
+		cout << "These rocks are formed through a compacting proccess of disposed materials.\n";
+		cout << "\n";
+		cout << "\n";
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "In what environment would you find this type of rock? (sedimentary)\n";
+		}
+
+
+		cout << "\n";
+		cout << "\n";
+		cin >> input;
+		if (input == "marine" || "lake" || "beach" || "lagoon" || "water") // added water and other areas
+		{
+			cout << "That's correct, you find those here to have the forces carry the materials to be deposited.\n";
+
+			cout << "////////////////////////////////////////////\n";
+			cout << "Type go to advance to the next question.\n";
+			cout << "\n";
+			cout << "\n";
+			cout << "\n";
+			cout << "\n";
+			cout << "\n";
+			cout << "\n";
+			cout << "////////////////////////////////////////////\n";
+
+			cin >> input;
+			cout << "\n";
+			cout << "\n";
+
+			if (input == "go")
+			{
+				cout << "What are some common sedimentary rocks?\n";
+			}
+
+
+
+			cout << "\n";
+			cout << "\n";
+			cin >> input;
+			cout << "\n";
+
+			if (input == "limestone" || "shale" || "sandstone")
+			{
+				cout << "That is right. Wether it be sandstone, shale, or limestone \n";
+				cout << "these are all common sedimentary rocks.\n";
+
+				cout << "\n";
+				cout << "\n";
+
+				cout << "////////////////////////////////////////////\n";
+				cout << "Type go to advance to the next question.\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "////////////////////////////////////////////\n";
+
+				cin >> input;
+				cout << "\n";
+				cout << "\n";
+
+				if (input == "go")
+				{
+					cout << "Are these rocks (sandstone, shale, or limestone) made using magma? yes / no ?\n";
+				}
+
+
+
+
+				cout << "\n";
+				cout << "\n";
+
+				cin >> input;
+				cout << "\n";
+
+				if (input == "yes")
+				{
+					cout << "That would be igneous rather than sedimantary.\n";
+				}
+
+				if (input == "no")
+				{
+					cout << "Correct. Igneous rocks are formed with magma.\n";
+				}
+
+				cout << "////////////////////////////////////////////\n";
+				cout << "Type go to advance to the next question.\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "////////////////////////////////////////////\n";
+
+				cin >> input;
+				cout << "\n";
+				cout << "\n";
+
+				if (input == "go")
+				{
+					cout << "Sedimentary rocks are formed by... \n";
+				}
+
+
+				cout << "\n";
+				cout << "A. Fluids		B. Wethering		C. Melting\n";
+				cout << "\n";
+				cout << "\n";
+
+				cin >> input;
+				cout << "\n";
+
+				if (input == "B")
+				{
+					cout << "Correct. Wethering and Erosion form our sedimentary rocks.\n";
+				}
+
+				cout << "////////////////////////////////////////////\n";
+				cout << "You have completed this section.\n";
+				cout << "\n";
+				cout << "Reload program to attempt a different section =).\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "\n";
+				cout << "////////////////////////////////////////////\n";
+
+				cin >> input;
+				cout << "\n";
+				cout << "\n";
+
+				if (input == "go")
+				{
+					cout << "Program Ready To Load\n";
+				}
+
+			}
+		}
+		/*if (input != "marine environments")
+		{
+			cout << "That wasn't a selection. Please reload and try agian :)";
+			cout << "\n";
+			cout << "\n";
+		}*/
+		
+
+	}
+	if (input == "metamorphic")
+	{
+		cout << "These rocks are formed with pressure and heat.\n";
+		cout << "\n";
+		cout << "\n";
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "In what environment would you find this type of rock?\n";
+		}
+
+
+		cout << "\n";
+		cout << "A. Marine         B. Earth's interior        C. Glacial\n";
+		cout << "\n";
+		cout << "\n";
+		cin >> input;
+		cout << "\n";
+
+		if (input == "B")
+		{
+			cout << "Correct. These rocks are located beneath the earths surface.\n";
+		}
+		cout << "\n";
+
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "What would be a common metamorphic rock.\n";
+		}
+
+
+		cout << "\n";
+		cout << "A. Coal      B. Clay       C. Gravel\n";
+		cout << "\n";
+		cout << "\n";
+
+		cin >> input;
+		cout << "\n";
+
+
+		if (input == "A")
+		{
+			cout << "That's right. Coal can be found beneath the Earths surface.\n";
+		}
+
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "Metamorhpic rocks are formed by... \n";
+		}
+
+
+		cout << "\n";
+		cout << "A. Erosion		B. Lithification		C. Heat & Pressure";
+		cout << "\n";
+		cout << "\n";
+
+		cin >> input;
+		cout << "\n";
+
+		if (input == "C")
+		{
+			cout << "You're right. Heat & Pressure alter sedimentary and igneous rocks creating metamorphic rocks.\n";
+		}
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "You have completed this section.\n";
+		cout << "\n";
+		cout << "Reload program to attempt a different section =).\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "Program Ready To Load\n";
+		}
+
+	}
+	if (input == "igneous")
+	{
+		cout << "These rocks are formed from the magma of earths interior.\n";
+		cout << "\n";
+		cout << "\n";
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "In what environment would you find this type of rock?\n";
+		}
+
+
+		cout << "\n";
+		cout << "A. Glacial         B. Marine        C. Magma Chambers\n";
+		cout << "\n";
+		cout << "\n";
+		cin >> input;
+		cout << "\n";
+
+		if (input == "C")
+		{
+			cout << "Magma Chambers is correct, these chambers lying in the Earth's interior.\n";
+		}
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "What is a common igneous rocks?";
+		}
+
+
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "A. Basalt     B. Shale     C. Limestone\n";
+		cout << "\n";
+		
+		cin >> input;
+
+		if (input == "A")
+		{
+			cout << "Right! BONUS QUESTION:\n";
+			cout << "When do you have Basalts form ? \n";
+		}
+		cout << "\n";
+		cout << "\n";
+		cout << "A. On Mountians      B. In Deserts        C. Under Water\n";
+		cout << "\n";
+		cout << "\n";
+
+
+		cin >> input;
+
+		if (input == "C")
+		{
+			cout << "Yes, The lava erupting under water is what creates the pillow basalts.\n";
+		}
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "Which of these is a igneous rock?\n";
+		}
+
+
+		cout << "\n";
+		cout << "\n";
+		cout << "Rhyolite         Gravel        Marble\n";
+		cout << "\n";
+		cout << "\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+		if (input == "rhyolite")
+		{
+			cout << "Right, Rhyolite.\n";
+		}
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "Out of these 3 Name the igneous rock.\n";
+		}
+
+
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "Slate      Silt            Granite\n";
+		cout << "\n";
+		cout << "\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "granite")
+		{
+			cout << "That's right. Granite is the correct igneous rock.\n";
+		}
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "Which of these is NOT igneous.\n";
+		}
+
+
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "Gabbro       Diorite          Gneiss\n";
+		cout << "\n";
+		cout << "\n";
+
+		cin >> input;
+
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "gneiss")
+		{
+			cout << "You are right!\n";
+			cout << "\n";
+			cout << "Gneiss is metamorphic made of Quarts, Feldspars\n";
+			cout << "Hornblendes, & Micas.\n";
+			cout << "\n";
+			cout << "They also have a high metamorhpic grade.\n";
+
+
+		}
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "Name the igneous rock.\n";
+		}
+
+
+		cout << "\n";
+		cout << "Andesite        Schist         Hornfels\n";
+		cout << "\n";
+		cout << "\n";
+
+		cin >> input;
+
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "andesite")
+		{
+			cout << "Correct. Andesite is a common igneous rock.\n";
+		}
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "The name for the rock texture formed by slow cooling is...\n";
+			cout << "Phaneritic. True or False?\n";
+		}
+
+		cout << "\n";
+		cout << "\n";
+
+		cin >> input;
+
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "true")
+		{
+			cout << "Correct. This slow cooling creates coarse grained rock.\n";
+		}
+
+		cout << "\n";
+		cout << "\n";
+		
+		cout << "////////////////////////////////////////////\n";
+		cout << "Type go to advance to the next question.\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "Aphanitic is the name of when the rock cools rapidly.\n";
+			cout << "True or False?\n";
+		}
+
+		cout << "\n";
+		cout << "\n";
+
+		cin >> input;
+
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "true")
+		{
+			cout << "Correct!\n";
+			cout << "This rapid cooling produces fine-grained rock.\n";
+		}
+
+		cout << "////////////////////////////////////////////\n";
+		cout << "You have completed this section.\n";
+		cout << "\n";
+		cout << "Reload program to attempt a different section =).\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "////////////////////////////////////////////\n";
+
+		cin >> input;
+		cout << "\n";
+		cout << "\n";
+
+		if (input == "go")
+		{
+			cout << "Program Ready To Load\n";
+		}
+
+
+
+	}
+	
+	/*if (input != "metamorphic" || "sedimentary" || "igneous")
+	{
+		cout << "That wasn't a selection. Please reload and try agian :)";
+		cout << "\n";
+		cout << "\n";
+	}*/
+
+	/*cout << "Where would you find this type of rock?";
+
+	cin >> input;*/
+
+
+
+	return 0;
+}
